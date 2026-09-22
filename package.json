@@ -1,0 +1,24 @@
+{
+    "name": "@black-jaguar-1/antigravity-agents",
+    "version": "1.0.0",
+    "description": "Distribuidor de agentes para Google Antigravity",
+    "main": "bin/cli.js",
+    "bin": {
+        "antigravity-agents": "./bin/cli.js"
+    },
+    "files": [
+        "bin"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BLACK-JAGUAR-1/antigravity-agents.git"
+    },
+    "keywords": [
+        "antigravity",
+        "agents",
+        "gemini",
+        "pnpm"
+    ],
+    "author": "BLACK-JAGUAR-1",
+    "license": "MIT"
+}
