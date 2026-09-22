@@ -14,4 +14,4 @@ Para instalar un subagente dentro de un proyecto, abra una terminal en la raíz 
 
 ### Windows (PowerShell)
 ```powershell
-Invoke-RestMethod -Uri "https://raw.githubusercontent.com/BLACK-JAGUAR-1/antigravity-agents/main/install.ps1" | Invoke-Expression -ArgumentList "code-reviewer"
+& ([scriptblock]::Create((Invoke-RestMethod -Uri "[https://raw.githubusercontent.com/BLACK-JAGUAR-1/antigravity-agents/main/install.ps1](https://raw.githubusercontent.com/BLACK-JAGUAR-1/antigravity-agents/main/install.ps1)"))) -Agent "code-reviewer"
