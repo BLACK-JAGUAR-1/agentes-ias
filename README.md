@@ -44,21 +44,214 @@ El repositorio distribuye los agentes mediante ejecucion directa con **pnpm dlx*
 
 ---
 
-## 2. Instrucciones de Instalacion
+## 2. Instrucciones de Instalacion por Plataforma (pnpm dlx)
 
-Abra una consola en la raiz del proyecto donde desee incorporar los agentes y ejecute el metodo correspondiente:
+Seleccione su entorno de desarrollo y copie directamente el comando del paquete que necesita:
 
-### Con pnpm dlx (Recomendado)
+### Kiro (`.kiro/agents/`)
 
+Instalar **Backend**:
 ```bash
-# Instalar un agente individual en Kiro
-pnpm dlx @black-jaguar-1/agentes-ias --agent code-reviewer --platform kiro
+pnpm dlx @black-jaguar-1/agentes-ias --package backend --platform kiro
+```
 
-# Instalar un agente en Antigravity (por defecto)
-pnpm dlx @black-jaguar-1/agentes-ias --agent backend-architect
-
-# Instalar un paquete completo en Kiro
+Instalar **Bases de Datos**:
+```bash
 pnpm dlx @black-jaguar-1/agentes-ias --package database --platform kiro
+```
 
-# Instalar un paquete completo en Claude
+Instalar **Calidad y QA**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package qa-automation --platform kiro
+```
+
+Instalar **Rendimiento**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package performance --platform kiro
+```
+
+Instalar **Desarrollo**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package development --platform kiro
+```
+
+Instalar agente individual (Code Reviewer):
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --agent code-reviewer --platform kiro
+```
+
+---
+
+### Google Antigravity (`.antigravity/agents/`)
+
+Instalar **Backend**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package backend --platform antigravity
+```
+
+Instalar **Bases de Datos**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package database --platform antigravity
+```
+
+Instalar **Calidad y QA**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package qa-automation --platform antigravity
+```
+
+Instalar **Rendimiento**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package performance --platform antigravity
+```
+
+Instalar **Desarrollo**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package development --platform antigravity
+```
+
+Instalar agente individual (Code Reviewer):
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --agent code-reviewer --platform antigravity
+```
+
+---
+
+### Claude Code (`.claude/agents/`)
+
+Instalar **Backend**:
+```bash
 pnpm dlx @black-jaguar-1/agentes-ias --package backend --platform claude
+```
+
+Instalar **Bases de Datos**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package database --platform claude
+```
+
+Instalar **Calidad y QA**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package qa-automation --platform claude
+```
+
+Instalar **Rendimiento**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package performance --platform claude
+```
+
+Instalar **Desarrollo**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package development --platform claude
+```
+
+Instalar agente individual (Code Reviewer):
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --agent code-reviewer --platform claude
+```
+
+---
+
+### Codex (`.codex/agents/`)
+
+Instalar **Backend**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package backend --platform codex
+```
+
+Instalar **Bases de Datos**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package database --platform codex
+```
+
+Instalar **Calidad y QA**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package qa-automation --platform codex
+```
+
+Instalar **Rendimiento**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package performance --platform codex
+```
+
+Instalar **Desarrollo**:
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --package development --platform codex
+```
+
+Instalar agente individual (Code Reviewer):
+```bash
+pnpm dlx @black-jaguar-1/agentes-ias --agent code-reviewer --platform codex
+```
+
+---
+
+## 3. Alternativas con Scripts Nativos
+
+### PowerShell (Windows)
+
+Instalar paquete de **Backend**:
+```powershell
+& ([scriptblock]::Create((Invoke-RestMethod -Uri "[https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.ps1](https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.ps1)"))) -Package "backend" -Platform "kiro"
+```
+
+Instalar paquete de **Bases de Datos**:
+```powershell
+& ([scriptblock]::Create((Invoke-RestMethod -Uri "[https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.ps1](https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.ps1)"))) -Package "database" -Platform "kiro"
+```
+
+Instalar paquete de **Calidad y QA**:
+```powershell
+& ([scriptblock]::Create((Invoke-RestMethod -Uri "[https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.ps1](https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.ps1)"))) -Package "qa-automation" -Platform "kiro"
+```
+
+Instalar paquete de **Rendimiento**:
+```powershell
+& ([scriptblock]::Create((Invoke-RestMethod -Uri "[https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.ps1](https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.ps1)"))) -Package "performance" -Platform "kiro"
+```
+
+Instalar paquete de **Desarrollo**:
+```powershell
+& ([scriptblock]::Create((Invoke-RestMethod -Uri "[https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.ps1](https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.ps1)"))) -Package "development" -Platform "kiro"
+```
+
+---
+
+### Bash (Linux / macOS / WSL)
+
+Instalar paquete de **Backend**:
+```bash
+curl -fsSL [https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.sh](https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.sh) | bash -s -- --package backend --platform kiro
+```
+
+Instalar paquete de **Bases de Datos**:
+```bash
+curl -fsSL [https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.sh](https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.sh) | bash -s -- --package database --platform kiro
+```
+
+Instalar paquete de **Calidad y QA**:
+```bash
+curl -fsSL [https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.sh](https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.sh) | bash -s -- --package qa-automation --platform kiro
+```
+
+Instalar paquete de **Rendimiento**:
+```bash
+curl -fsSL [https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.sh](https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.sh) | bash -s -- --package performance --platform kiro
+```
+
+Instalar paquete de **Desarrollo**:
+```bash
+curl -fsSL [https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.sh](https://raw.githubusercontent.com/BLACK-JAGUAR-1/agentes-ias/main/install.sh) | bash -s -- --package development --platform kiro
+```
+
+---
+
+## 4. Rutas de Destino por Plataforma
+
+El instalador detecta el parametro `--platform` y deposita los archivos `.md` en la ruta esperada por cada entorno:
+
+| Plataforma | Parametro | Directorio donde se instalan |
+| :--- | :--- | :--- |
+| **Kiro** | `--platform kiro` | `.kiro/agents/` |
+| **Antigravity** | `--platform antigravity` | `.antigravity/agents/` |
+| **Claude** | `--platform claude` | `.claude/agents/` |
+| **Codex** | `--platform codex` | `.codex/agents/` |
+| **Generico** | `--platform generic` | `.ai/agents/` |
