@@ -1,21 +1,30 @@
 {
-    "name": "@black-jaguar-1/antigravity-agents",
+    "name": "@black-jaguar-1/agentes-ias",
     "version": "1.0.0",
-    "description": "Distribuidor de agentes para Google Antigravity",
+    "description": "Distribuidor multiplataforma de subagentes especializados de IA para desarrollo de software",
     "main": "bin/cli.js",
     "bin": {
-        "antigravity-agents": "./bin/cli.js"
+        "agentes-ias": "./bin/cli.js"
+    },
+    "packageManager": "pnpm@9.15.4",
+    "engines": {
+        "node": ">=18.0.0",
+        "pnpm": ">=9.0.0"
     },
     "files": [
-        "bin"
+        "bin",
+        "packages"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BLACK-JAGUAR-1/antigravity-agents.git"
+        "url": "https://github.com/BLACK-JAGUAR-1/agentes-ias.git"
     },
     "keywords": [
+        "agentes",
+        "ai",
         "antigravity",
-        "agents",
+        "kiro",
+        "claude",
         "gemini",
         "pnpm"
     ],
